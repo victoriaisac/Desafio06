@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afiliacion</title>
+</head>
+<body>
+    <header>
+        <h1>Vení al Gym! 💪🏼</h1>
+    </header>
+
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>🙋‍♀️ Datos personales 👀</legend>
+            
+            <label for="Nombre">Nombre:* </label>
+            <input type="text" id="Nombre" required> <br>
+
+            <label for="Apellido">Apellido:* </label>
+            <input type="text" id="Apellido" required><br>
+
+            <label for="Documento">Documento:* </label>
+            <input type="text" id="Documento" required><br>
+
+            <label for="Nacionalidad">Nacionalidad:*</label>
+            <select name="Nacionalidad" id="Nacionalidad" required>
+                <option value="Argentina">Argentina</option>
+                <option value="Uruguaya">Uruguaya</option>
+                <option value="Brasileña">Brasileña</option>
+                <option value="Chilena">Chilena</option>
+            </select><br>
+
+            <label for="Comentario">Contanos un poco de vos..</label>
+            <textarea name="Comentario" id="Comentario"cols="20" rows="3"></textarea><br>
+
+            <label for="Sexo">Sexo:*</label><br>
+            <input type="radio" name="Sexo" value="Femenino" required>Femenino
+            <input type="radio" name="Sexo" value="Masculino" required>Masculino
+            <input type="radio" name="Sexo" value="Otro" required>Otro
+            </fieldset>
+
+            <fieldset>
+                <legend>📱 Datos de Contacto ✉️</legend>
+
+                <label for="Telefono">Teléfono:</label>
+                <input type="number" placeholder="Codigo de area y numero"> <br>
+
+                <label for="Email">Dirección de correo electrónico:* </label>
+                <input type="email" placeholder="Ej: mail@gmail.com" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>🚴 Actividades 🤸</legend>
+                <p>Por favor, indicá cuáles actividades te interesan.</p>
+
+                <label for="Palermo">Sede Palermo:</label><br>
+                <input type="checkbox" id="basquet"> Básquet
+                <input type="checkbox" id="boxeo"> Boxeo
+                <input type="checkbox" id="futbol"> Fútbol
+                <input type="checkbox" id="tenis"> Tenis <br>
+
+                <label for="Rosario">Sede Rosario:</label><br>
+                <input type="checkbox" id="basquet"> Básquet
+                <input type="checkbox" id="futbol"> Fútbol
+                <input type="checkbox" id="rugby"> Rugby
+                <input type="checkbox" id="voley"> Voley
+            </fieldset>
+
+            <input type="checkbox" name="Condiciones" id="condiciones" required>
+            <label for="condiciones">Acepto las condiciones*</label>
+
+            <input type="checkbox" name="Novedades" id="novedades">
+            <label for="novedades">Deseo recibir novedades</label>
+
+            <p>*: campo obligatorio</p>
+        </form>
+    </main>
+</body>
+</html>
