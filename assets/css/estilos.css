@@ -1,0 +1,58 @@
+main{
+    width: 30%
+}
+
+body{
+    background-color: #1F2023;
+    color: #E8EAED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: #242527;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 10px;
+    border-color: #4D6D63;
+    border-right: transparent;
+    border-left: transparent;
+    width: 30%;
+}
+
+#primer{
+    display: flex;
+    flex-direction: column;
+    background-color: #a6c1b900;
+    text-align: center;
+}
+
+#primer legend{
+    background-color: #2B3D37;
+    padding: 10px;
+    border-radius: 5px;
+    color: #E8EAED;
+    text-align: left;
+    display: flex;
+
+}
+
+fieldset #Nombre {
+    width: 60%;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+fieldset #Apellido {
+    width: 60%;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+

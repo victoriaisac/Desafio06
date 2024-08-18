@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afiliacion</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
 </head>
 <body>
     <header>
@@ -12,35 +13,44 @@
 
     <main>
         <form action="">
-            <fieldset>
-                <legend>🙋‍♀️ Datos personales 👀</legend>
             
-            <label for="Nombre">Nombre:* </label>
-            <input type="text" id="Nombre" required> <br>
-
-            <label for="Apellido">Apellido:* </label>
-            <input type="text" id="Apellido" required><br>
-
-            <label for="Documento">Documento:* </label>
-            <input type="text" id="Documento" required><br>
-
-            <label for="Nacionalidad">Nacionalidad:*</label>
-            <select name="Nacionalidad" id="Nacionalidad" required>
-                <option value="Argentina">Argentina</option>
-                <option value="Uruguaya">Uruguaya</option>
-                <option value="Brasileña">Brasileña</option>
-                <option value="Chilena">Chilena</option>
-            </select><br>
-
-            <label for="Comentario">Contanos un poco de vos..</label>
-            <textarea name="Comentario" id="Comentario"cols="20" rows="3"></textarea><br>
-
-            <label for="Sexo">Sexo:*</label><br>
-            <input type="radio" name="Sexo" value="Femenino" required>Femenino
-            <input type="radio" name="Sexo" value="Masculino" required>Masculino
-            <input type="radio" name="Sexo" value="Otro" required>Otro
-            </fieldset>
-
+            <div id="primer">
+                <fieldset>
+                    <legend>🙋‍♀️ Datos personales 👀</legend>
+                    
+                    <label for="Nombre">Nombre:* </label>
+                    <br>
+                    <input type="text" id="Nombre" required> <br>
+                    
+                    <label for="Apellido">Apellido:* </label>
+                    <br>
+                    <input type="text" id="Apellido" required><br>
+                    
+                    <label for="Documento">Documento:* </label>
+                    <br>
+                    <input type="text" id="Documento" required><br>
+                    
+                    <label for="Nacionalidad">Nacionalidad:*</label>
+                    <br>
+                    <select name="Nacionalidad" id="Nacionalidad" required>
+                        <option value="Seleccionar">- Seleccionar -</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Uruguaya">Uruguaya</option>
+                        <option value="Brasileña">Brasileña</option>
+                        <option value="Chilena">Chilena</option>
+                    </select><br>
+                    
+                    <label for="Comentario">Contanos un poco de vos..</label>
+                    <br>
+                    <textarea name="Comentario" id="Comentario"cols="20" rows="3"></textarea><br>
+                    
+                    <label for="Sexo">Sexo:*</label><br>
+                    <input type="radio" name="Sexo" value="Femenino" required>Femenino
+                    <input type="radio" name="Sexo" value="Masculino" required>Masculino
+                    <input type="radio" name="Sexo" value="Otro" required>Otro
+                </fieldset>
+            </div>
+                
             <fieldset>
                 <legend>📱 Datos de Contacto ✉️</legend>
 
@@ -70,12 +80,16 @@
 
             <input type="checkbox" name="Condiciones" id="condiciones" required>
             <label for="condiciones">Acepto las condiciones*</label>
+            <br>
 
             <input type="checkbox" name="Novedades" id="novedades">
             <label for="novedades">Deseo recibir novedades</label>
 
             <p>*: campo obligatorio</p>
         </form>
+
+        <button type="submit">Iniciar afiliación</button>
+        <button type="reset">Restablecer</button>
     </main>
 </body>
 </html>
