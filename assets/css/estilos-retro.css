@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Pacifico&display=swap'); 
+
+
+body {background-color: #e8e2d6;
+color: #232835;
+font-family: "Chicle", serif;
+font-weight: 400;
+font-style: normal;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header {font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3em;
+    background-color: #232835;
+    color: #e8e2d6;
+    border: double 15px #e8e2d6;
+    border-radius: 30px;
+    padding: 0%;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;}
