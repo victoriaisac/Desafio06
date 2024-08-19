@@ -8,31 +8,31 @@
 </head>
 <body>
     <header>
-        <h1>Vení al Gym! 💪🏼</h1>
+        <h1 id="titulo">Vení al Gym! 💪🏼</h1>
     </header>
 
     <main>
         <form action="">
             
-            <div id="primer">
-                <fieldset>
-                    <legend>🙋‍♀️ Datos personales 👀</legend>
+            <div class="primer">
+                <fieldset class="contenedores">
+                    <legend class="titulo-contenedor">🙋‍♀️ DATOS PERSONALES 👀</legend>
                     
                     <label for="Nombre">Nombre:* </label>
                     <br>
-                    <input type="text" id="Nombre" required> <br>
+                    <input type="text" class="textarea" required> <br>
                     
                     <label for="Apellido">Apellido:* </label>
                     <br>
-                    <input type="text" id="Apellido" required><br>
+                    <input type="text" class="textarea" required><br>
                     
                     <label for="Documento">Documento:* </label>
                     <br>
-                    <input type="text" id="Documento" required><br>
+                    <input type="text" class="textarea" required><br>
                     
                     <label for="Nacionalidad">Nacionalidad:*</label>
                     <br>
-                    <select name="Nacionalidad" id="Nacionalidad" required>
+                    <select name="Nacionalidad" class="textarea" required>
                         <option value="Seleccionar">- Seleccionar -</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Uruguaya">Uruguaya</option>
@@ -42,7 +42,7 @@
                     
                     <label for="Comentario">Contanos un poco de vos..</label>
                     <br>
-                    <textarea name="Comentario" id="Comentario"cols="20" rows="3"></textarea><br>
+                    <textarea name="Comentario" class="textarea" cols="20" rows="3"></textarea><br>
                     
                     <label for="Sexo">Sexo:*</label><br>
                     <input type="radio" name="Sexo" value="Femenino" required>Femenino
@@ -50,28 +50,36 @@
                     <input type="radio" name="Sexo" value="Otro" required>Otro
                 </fieldset>
             </div>
+
+            <hr>
+            
+            <div class="primer">
+            <fieldset class="contenedores">
+                <legend class="titulo-contenedor">📱 DATOS DE CONTACTO ✉️</legend>
                 
-            <fieldset>
-                <legend>📱 Datos de Contacto ✉️</legend>
+                
+                <label for="Telefono" class="datos">Teléfono:</label>
+                <input type="number" placeholder="Codigo de area y numero" class="textarea"> <br>
 
-                <label for="Telefono">Teléfono:</label>
-                <input type="number" placeholder="Codigo de area y numero"> <br>
-
-                <label for="Email">Dirección de correo electrónico:* </label>
-                <input type="email" placeholder="Ej: mail@gmail.com" required>
+                <label for="Email" class="datos">Dirección de correo electrónico:* </label>
+                <input type="email" placeholder="Ej: mail@gmail.com" class="textarea" required>
+                
             </fieldset>
+            </div>
 
-            <fieldset>
-                <legend>🚴 Actividades 🤸</legend>
+            <hr>
+
+            <fieldset class="contenedores">
+                <legend class="titulo-contenedor">🚴 ACTIVIDADES 🤸</legend>
                 <p>Por favor, indicá cuáles actividades te interesan.</p>
 
-                <label for="Palermo">Sede Palermo:</label><br>
+                <label for="Palermo" class="sedes">Sede Palermo:</label><br>
                 <input type="checkbox" id="basquet"> Básquet
                 <input type="checkbox" id="boxeo"> Boxeo
                 <input type="checkbox" id="futbol"> Fútbol
                 <input type="checkbox" id="tenis"> Tenis <br>
 
-                <label for="Rosario">Sede Rosario:</label><br>
+                <label for="Rosario" class="sedes">Sede Rosario:</label><br>
                 <input type="checkbox" id="basquet"> Básquet
                 <input type="checkbox" id="futbol"> Fútbol
                 <input type="checkbox" id="rugby"> Rugby
@@ -79,11 +87,11 @@
             </fieldset>
 
             <input type="checkbox" name="Condiciones" id="condiciones" required>
-            <label for="condiciones">Acepto las condiciones*</label>
+            <label for="condiciones" class="label">Acepto las condiciones*</label>
             <br>
 
             <input type="checkbox" name="Novedades" id="novedades">
-            <label for="novedades">Deseo recibir novedades</label>
+            <label for="novedades" class="label">Deseo recibir novedades</label>
 
             <p>*: campo obligatorio</p>
         </form>
