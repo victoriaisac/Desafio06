@@ -36,21 +36,14 @@ header{
 #titulo { font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
-<<<<<<< HEAD
     font-size: 50px;
     color: white;
     position: relative;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-=======
-font-size: 3em;
-padding: 0%;
-margin: 0%;
-color: white;}
->>>>>>> 35a13e11d5956799e6ca9dbdd9b75ac6c8676424
 
-.primer{
+.primer, .segund{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -81,11 +74,8 @@ background-color: #A6C1B9;
 margin: 20px 0;
 padding: 20px;
 border: solid 3px #4d6d63;
-<<<<<<< HEAD
 border-radius: 10px;
 
-=======
->>>>>>> 35a13e11d5956799e6ca9dbdd9b75ac6c8676424
 }
 
 .contenedores:active {background-color: #a6c1b9;}
