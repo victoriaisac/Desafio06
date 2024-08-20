@@ -65,20 +65,20 @@ header{
     border-radius: 5px;
     margin: 20px;
     border: solid 1px #658078;
-    
 }
+
+.textarea:focus{background-color: #4D6D63;}
+
+.opcion{color: #000000;}
 
 
 .contenedores {
-background-color: #A6C1B9;
+background-color: #d6e2de;
 margin: 20px 0;
 padding: 20px;
 border: solid 3px #4d6d63;
 border-radius: 10px;
-
 }
-
-.contenedores:active {background-color: #a6c1b9;}
 
 hr{
     border-top: transparent;
