@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afiliacion</title>
     <!-- Estilo bootcamp -->
-    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css"> 
 <!-- Estilo retro -->
-    <!--     <link rel="stylesheet" href="./assets/css/estilos-retro.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/estilos-retro.css"> --> 
 <!-- Estilo futurista -->
     <!--     <link rel="stylesheet" href="./assets/css/estilo-futurista.css"> -->
     <script src="assets/js/index.js"></script>
@@ -23,7 +23,7 @@
             <div class="primer">
                 <fieldset class="contenedores">
                     <legend class="titulo-contenedor">🙋‍♀️ DATOS PERSONALES 👀</legend>
-                    
+                
                     <label for="Nombre">Nombre:* </label>
                     <br>
                     <input type="text" class="textarea" required> <br>
@@ -39,11 +39,11 @@
                     <label for="Nacionalidad">Nacionalidad:*</label>
                     <br>
                     <select name="Nacionalidad" class="textarea" id="nacionalidad" required>
-                        <option value="Seleccionar">- Seleccionar -</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Uruguaya">Uruguaya</option>
-                        <option value="Brasileña">Brasileña</option>
-                        <option value="Chilena">Chilena</option>
+                        <option value="Seleccionar" class="opcion">- Seleccionar -</option>
+                        <option value="Argentina" class="opcion">Argentina</option>
+                        <option value="Uruguaya" class="opcion">Uruguaya</option>
+                        <option value="Brasileña" class="opcion">Brasileña</option>
+                        <option value="Chilena" class="opcion">Chilena</option>
                     </select><br>
                     
                     <label for="Comentario">Contanos un poco de vos..</label>
@@ -62,7 +62,7 @@
 
             <hr>
             
-            <div class="primer">
+            <div class="segund">
             <fieldset class="contenedores">
                 <legend class="titulo-contenedor">📱 DATOS DE CONTACTO ✉️</legend>
                 
@@ -77,23 +77,29 @@
 
             <hr>
 
+            <div class="tercer">
             <fieldset class="contenedores">
                 <legend class="titulo-contenedor">🚴 ACTIVIDADES 🤸</legend>
                 <p>Por favor, indicá cuáles actividades te interesan.</p>
 
                 <label for="Palermo" >Sede Palermo:</label><br> <br>
+                <div class="deportes">
                 <input type="checkbox" id="basquet"> Básquet
                 <input type="checkbox" id="boxeo"> Boxeo
                 <input type="checkbox" id="futbol"> Fútbol
                 <input type="checkbox" id="tenis"> Tenis <br><br>
+                </div>
             
 
                 <label for="Rosario" >Sede Rosario:</label><br> <br>
+                <div class="deportes">
                 <input type="checkbox" id="basquet"> Básquet
                 <input type="checkbox" id="futbol"> Fútbol
                 <input type="checkbox" id="rugby"> Rugby
                 <input type="checkbox" id="voley"> Voley
+                </div>
             </fieldset>
+            </div>
 
             <div id="condiciones">
                 <input type="checkbox" name="Condiciones" id="condiciones" required>

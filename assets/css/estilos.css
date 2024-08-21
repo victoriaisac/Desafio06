@@ -36,12 +36,14 @@ header{
 #titulo { font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
-font-size: 3em;
-padding: 0%;
-margin: 0%;
-color: white;}
+    font-size: 50px;
+    color: white;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
-.primer{
+.primer, .segund{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -63,18 +65,20 @@ color: white;}
     border-radius: 5px;
     margin: 20px;
     border: solid 1px #658078;
-    
 }
+
+.textarea:focus{background-color: #4D6D63;}
+
+.opcion{color: #000000;}
 
 
 .contenedores {
-background-color: #A6C1B9;
+background-color: #d6e2de;
 margin: 20px 0;
 padding: 20px;
 border: solid 3px #4d6d63;
+border-radius: 10px;
 }
-
-.contenedores:active {background-color: #a6c1b9;}
 
 hr{
     border-top: transparent;
