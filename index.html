@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afiliacion</title>
-    <!-- <link rel="stylesheet" href="./assets/css/estilos.css"> -->
-    
-    <!-- Estilo retro -->
-    <link rel="stylesheet" href="./assets/css/estilos-retro.css">
+    <!-- Estilo bootcamp -->
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+<!-- Estilo retro -->
+    <!--     <link rel="stylesheet" href="./assets/css/estilos-retro.css"> -->
+<!-- Estilo futurista -->
+    <!--     <link rel="stylesheet" href="./assets/css/estilo-futurista.css"> -->
+    <script src="assets/js/index.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +18,7 @@
     </header>
 
     <main>
-        <form action="">
+        <form id="formulario-afiliacion">
             
             <div class="primer">
                 <fieldset class="contenedores">
@@ -93,19 +96,21 @@
             </fieldset>
 
             <div id="condiciones">
-            <input type="checkbox" name="Condiciones" id="condiciones" required>
-            <label for="condiciones" >Acepto las condiciones*</label>
-            <br> <br>
+                <input type="checkbox" name="Condiciones" id="condiciones" required>
+                <label for="condiciones" >Acepto las condiciones*</label>
+                <br> <br>
 
-            <input type="checkbox" name="Novedades" id="novedades">
-            <label for="novedades" >Deseo recibir novedades</label>
+                <input type="checkbox" name="Novedades" id="novedades">
+                <label for="novedades" >Deseo recibir novedades</label>
 
-            <p><b>*: campo obligatorio</b></p>
+                <p><b>*: campo obligatorio</b></p>
             </div>
-        </form>
 
-        <button type="submit"> <b>Iniciar afiliación</b></button>
-        <button type="reset"><b>Restablecer</b></button>
+            <button type="submit" id="submitBtn"> <b>Iniciar afiliación</b></button>
+            <button type="reset" id="resetBtn"><b>Restablecer</b></button>
+        </form>
     </main>
+
+    
 </body>
 </html>
